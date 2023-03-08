@@ -1,0 +1,43 @@
+@use "sass:math";
+
+.circle {
+    background-color: var(--my-color);
+    width: var(--width);
+    height: var(--height);
+    border-radius: 100%;
+  }
+
+.square {
+    background: var(--my-color); 
+    width: var(--width);
+    height: var(--height); 
+}
+
+.oval{
+    background: var(--my-color); 
+    width: calc(var(--height)*2);
+    height: var(--height); 
+    border-radius: var(--height) / calc(var(--height)/2);
+}
+
+.triangle{
+    border-bottom: var(--border-bottom) solid var(--my-color); 
+    width: 0; 
+    height: 0; 
+    border-left: var(--border-left) solid transparent; 
+    border-right: var(--border-right) solid transparent; 
+}
+
+.rectangle{
+    background: var(--my-color);
+    width: 140px; 
+    height: 80px;
+}
+
+.parallelogram{
+    width: 130px; 
+    height: 75px;
+    background: var(--my-color);
+    /* Skew */
+    transform: skew(20deg);
+}

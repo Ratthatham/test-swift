@@ -1,7 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import { BrowserRouter as Router } from 'react-router-dom';
+import 'antd/dist/reset.css';
+import '../src/index.css'
 import App from './App';
+
+// import i18n 
+import './i18n';
+
 
 
 const root = ReactDOM.createRoot(
@@ -9,7 +15,9 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>
 );
 
