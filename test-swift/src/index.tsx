@@ -2,11 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
 import 'antd/dist/reset.css';
-import '../src/index.css'
+import '../src/index.scss'
 import App from './App';
-
-// import i18n 
-import './i18n';
+import store from './redux/store';
+import { Provider } from 'react-redux';
 
 
 
@@ -15,9 +14,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <App />
+      </Router>
+    </Provider>
   </React.StrictMode>
 );
 

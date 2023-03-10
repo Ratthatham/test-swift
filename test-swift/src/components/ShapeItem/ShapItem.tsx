@@ -43,11 +43,48 @@ export const Oval = ({ color = "grey", h = "100px"}: OvalShape) => {
   );
 };
 
-export const Triangle = ({ color="grey", bb="100px", bl="60px", br="60px" }: TriangleShape) => {
-    const style = { '--my-color': color, '--border-bottom': bb, '--border-left': bl, '--border-right': br  } as React.CSSProperties;
+export const TriangleUp = ({ color="grey", bb="100px", bl="60px", br="60px" }: TriangleShape) => {
+    const style = { '--my-color': color, '--border-bottom': bb, '--border-left': bl, '--border-right': br } as React.CSSProperties;
     return (
-      <div className="triangle" style={style}/>
+      <div className="triangle-up" style={style}/>
     );
-  };
+};
+
+export const TriangleRight = ({ color="grey", bb="100px", bl="60px", br="60px" }: TriangleShape) => {
+    const style = { '--my-color': color, '--border-bottom': bb, '--border-left': bl, '--border-right': br } as React.CSSProperties;
+    return (
+      <div className="triangle-right" style={style}/>
+    );
+};
+
+export const TriangleDown = ({ color="grey", bb="100px", bl="60px", br="60px" }: TriangleShape) => {
+    const style = { '--my-color': color, '--border-bottom': bb, '--border-left': bl, '--border-right': br } as React.CSSProperties;
+    return (
+      <div className="triangle-down" style={style}/>
+    );
+};
+
+export const TriangleLeft = ({ color="grey", bb="100px", bl="60px", br="60px" }: TriangleShape) => {
+    const style = { '--my-color': color, '--border-bottom': bb, '--border-left': bl, '--border-right': br } as React.CSSProperties;
+    return (
+      <div className="triangle-left" style={style}/>
+    );
+};
+
+export const Rectangle = ({ color="grey",  w ="140px", h = "80px" }: MyComponentProps) => {
+  const style = { '--my-color': color, '--width': w, '--height': h } as React.CSSProperties;
+    return (
+      <div className="rectangle" style={style}/>
+    );
+};
+
+export const Parallelogram = ({ color="grey",  w ="130px", h = "75px" }: MyComponentProps) => {
+  const style = { '--my-color': color, '--width': w, '--height': h } as React.CSSProperties;
+    return (
+      <div className="parallelogram" style={style}/>
+    );
+};
+
+
 
 

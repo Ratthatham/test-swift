@@ -1,0 +1,48 @@
+.wrapper{
+    width: 20rem;
+    padding: 1rem;
+    margin-top: 4rem;
+    border-radius: 1rem;
+    background-color: black;
+
+    .screen{
+        height: 7rem;
+        border-bottom: 4rem;
+        background-color: white;
+        
+    }
+
+    .button-box{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: .5rem;
+        padding: 2rem 1rem;
+    }
+
+    .button{
+        background: #e9f0f4;
+        height: 3.5rem;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #242424;
+        border: none;
+        font-size: 1.25rem;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        background-color: #bfbfbf;
+    }
+
+    .operator{
+        background-color: #f79505;
+    }
+
+    .equals{
+        background-color: #f79505;
+        grid-column: 3/5;
+    }
+}

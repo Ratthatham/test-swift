@@ -3,7 +3,6 @@ import { Header } from 'antd/es/layout/layout'
 import { DownOutlined} from "@ant-design/icons"
 import { Dropdown, Button, Space, Menu } from 'antd'
 import type { MenuProps } from 'antd';
-import "./NavigationBar.scss"
 import { Outlet } from 'react-router-dom';
 
 
